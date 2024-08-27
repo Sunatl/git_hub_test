@@ -61,10 +61,22 @@
 
 
 
-def reverser(s):
-    return s[::-1].swapcase()
-print(reverser("Hello World"))
-print(reverser("ReVeRsE"))
+# def reverser(s):
+#     return s[::-1].swapcase()
+# print(reverser("Hello World"))
+# print(reverser("ReVeRsE"))
+
+
+
+
+def main(n):
+    a = n // 2
+    if n % 2 == 0:
+        return [a, a]
+    else:
+        return [a, a + (1 if n > 0 else -1)]
+print(main(4))
+print(main(10))
 
 
 
