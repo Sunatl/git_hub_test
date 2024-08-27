@@ -39,7 +39,7 @@
 #     return sum(1 for i in range(len(s)) if s[i:i+6] == "potato")
 # print(potatoes("potato"))
 # print(potatoes("potatopotato")) 
-# print(potatoes("potatopotatopotato"))
+# print(potatoes("potatopotatoorange"))
 
 
 
@@ -69,14 +69,28 @@
 
 
 
-def main(n):
-    a = n // 2
-    if n % 2 == 0:
-        return [a, a]
-    else:
-        return [a, a + (1 if n > 0 else -1)]
-print(main(4))
-print(main(10))
+# def main(n):
+#     a = n // 2
+#     if n % 2 == 0:
+#         return [a, a]
+#     else:
+#         return [a, a + (1 if n > 0 else -1)]
+# print(main(4))
+# print(main(10))
+
+
+
+
+
+def main(a, b, c):
+    n = a - b
+    s = (c + n - 1) // n
+    return s
+print(main(4000, 2000, 77000))
+print(main(3000, 2000, 50699))
+print(main(30000, 25000, 390205))
+
+
 
 
 
