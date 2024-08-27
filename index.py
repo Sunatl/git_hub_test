@@ -16,14 +16,23 @@
 
 
 
-def main(a):
-    for i in a[1:]:
-        print(i,end="")
-main("apple")
-print()
-main("cherry")
-print()
-main("plum")
+# def main(a):
+#     for i in a[1:]:
+#         print(i,end="")
+# main("apple")
+# print()
+# main("cherry")
+# print()
+# main("plum")
+
+
+
+def dis(a, s):
+    return a * (1 - s / 100)
+print(dis(1500, 50))
+print(dis(89, 20)) 
+print(dis(100, 75))
+
         
         
         
