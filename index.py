@@ -35,10 +35,18 @@
 
         
         
-def potatoes(s):
-    return sum(1 for i in range(len(s)) if s[i:i+6] == "potato")
-print(potatoes("potato"))
-print(potatoes("potatopotato")) 
-print(potatoes("potatopotatopotato"))
+# def potatoes(s):
+#     return sum(1 for i in range(len(s)) if s[i:i+6] == "potato")
+# print(potatoes("potato"))
+# print(potatoes("potatopotato")) 
+# print(potatoes("potatopotatopotato"))
+
+
+
+def main(lst):
+    return sum(x for x in lst if x > 5)
+print(main([1, 5, 20, 30, 4, 9, 18])) 
+print(main([1, 2, 3,4])) 
+print(main([10, 12, 28,47,55,100])) 
 
 
