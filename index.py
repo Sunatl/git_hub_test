@@ -52,11 +52,19 @@
 
 
 
-def main(a):
-    s = a[:2]
-    stuttered = f"{s}... {s}... {a}?"
-    return stuttered
-print(main("incredible")) 
+# def main(a):
+#     s = a[:2]
+#     stuttered = f"{s}... {s}... {a}?"
+#     return stuttered
+# print(main("incredible")) 
+
+
+
+
+def reverser(s):
+    return s[::-1].swapcase()
+print(reverser("Hello World"))
+print(reverser("ReVeRsE"))
 
 
 
