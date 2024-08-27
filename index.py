@@ -94,17 +94,24 @@
 
 
 
-a = int(input())
-for i in range(2,a):
-    if i == 2:
+# a = int(input())
+# for i in range(2,a):
+#     if i == 2:
         
-        cnt = 1+(1/i)
-        b = cnt
-    b+=1/i
-print(b)
+#         cnt = 1+(1/i)
+#         b = cnt
+#     b+=1/i
+# print(b)
      
 
 
 
 
 
+def main(a = {},b = {}):
+    if a == b:
+        print("True")
+    else:
+        print("False")
+main([1,2],[1,2])
+main([1,2],[1,3])
