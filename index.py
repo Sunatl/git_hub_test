@@ -27,12 +27,18 @@
 
 
 
-def dis(a, s):
-    return a * (1 - s / 100)
-print(dis(1500, 50))
-print(dis(89, 20)) 
-print(dis(100, 75))
+# def dis(a, s):
+#     return a * (1 - s / 100)
+# print(dis(1500, 50))
+# print(dis(89, 20)) 
+# print(dis(100, 75))
 
         
         
-        
+def potatoes(s):
+    return sum(1 for i in range(len(s)) if s[i:i+6] == "potato")
+print(potatoes("potato"))
+print(potatoes("potatopotato")) 
+print(potatoes("potatopotatopotato"))
+
+
