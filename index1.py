@@ -22,17 +22,29 @@
 
 
 
-def main(a, b):
-    if a == "" :
-        return "year missing"
-    if b == "" :
-        return "month missing"
-    s = b // 12
-    return a + s
-print(main(2020, 24))
-print(main(1832, 2)) 
-print(main(1444, 60))
-print(main("", 24))  
-print(main(2020, ""))
+# def main(a, b):
+#     if a == "" :
+#         return "year missing"
+#     if b == "" :
+#         return "month missing"
+#     s = b // 12
+#     return a + s
+# print(main(2020, 24))
+# print(main(1832, 2)) 
+# print(main(1444, 60))
+# print(main("", 24))  
+# print(main(2020, ""))
+
+
+
+
+
+def main(a):
+    month, day, year = a.split('/')
+    s = f"{year}{day}{month}"
+    return s
+print(main("11/12/2019"))
+print(main("12/31/2019"))
+
   
 
