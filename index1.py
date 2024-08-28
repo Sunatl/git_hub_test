@@ -39,12 +39,24 @@
 
 
 
+# def main(a):
+#     month, day, year = a.split('/')
+#     s = f"{year}{day}{month}"
+#     return s
+# print(main("11/12/2019"))
+# print(main("12/31/2019"))
+
+
+
+
+
+from datetime import date
 def main(a):
-    month, day, year = a.split('/')
-    s = f"{year}{day}{month}"
-    return s
-print(main("11/12/2019"))
-print(main("12/31/2019"))
+    return a.month == 12 and a.day == 24
+print(main(date(2013, 12, 24)))
+print(main(date(2013, 12, 23)))
+print(main(date(3000, 12, 24)))
+
 
   
 
