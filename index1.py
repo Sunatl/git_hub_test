@@ -12,10 +12,27 @@
 
 
 
-def main(a):
-    return (a + 99) // 100
-print(main(2005))  # 21
-print(main(1950))  # 20
-print(main(1900))  # 19
+# def main(a):
+#     return (a + 99) // 100
+# print(main(2005))  # 21
+# print(main(1950))  # 20
+# print(main(1900))  # 19
+
+
+
+
+
+def main(a, b):
+    if a == "" :
+        return "year missing"
+    if b == "" :
+        return "month missing"
+    s = b // 12
+    return a + s
+print(main(2020, 24))
+print(main(1832, 2)) 
+print(main(1444, 60))
+print(main("", 24))  
+print(main(2020, ""))
   
 
