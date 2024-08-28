@@ -15,10 +15,11 @@
 
 
 
-# from datetime import datetime
-# dek = datetime(2020,7,26)
-# a = datetime.strftime(dek, '%A')
-# print(a)
+from datetime import datetime
+def main(dek):
+    a = datetime.strftime(dek, '%A')
+    return a
+print(main(12/072019))
 
 
 

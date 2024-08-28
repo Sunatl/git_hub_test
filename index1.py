@@ -50,12 +50,31 @@
 
 
 
-from datetime import date
-def main(a):
-    return a.month == 12 and a.day == 24
-print(main(date(2013, 12, 24)))
-print(main(date(2013, 12, 23)))
-print(main(date(3000, 12, 24)))
+# from datetime import date
+# def main(a):
+#     return a.month == 12 and a.day == 24
+# print(main(date(2013, 12, 24)))
+# print(main(date(2013, 12, 23)))
+# print(main(date(3000, 12, 24)))
+
+
+
+
+
+
+
+from datetime import datetime
+def get_day(a):
+    t = datetime.strptime(a, '%m/%d/%Y')
+    k = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    x = (t.weekday() + 1) % 7
+    return k[x]
+print(get_day("12/07/2016")) 
+print(get_day("09/04/2016")) 
+print(get_day("12/08/2011")) 
+
+
+
 
 
   
