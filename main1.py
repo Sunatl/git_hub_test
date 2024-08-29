@@ -15,11 +15,6 @@
 
 
 
-from datetime import datetime
-def main(dek):
-    a = datetime.strftime(dek, '%A')
-    return a
-print(main(12/072019))
 
 
 

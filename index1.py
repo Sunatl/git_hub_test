@@ -14,9 +14,9 @@
 
 # def main(a):
 #     return (a + 99) // 100
-# print(main(2005))  # 21
-# print(main(1950))  # 20
-# print(main(1900))  # 19
+# print(main(2005))
+# print(main(1950)) 
+# print(main(1900))  
 
 
 
@@ -63,19 +63,38 @@
 
 
 
-from datetime import datetime
-def get_day(a):
-    t = datetime.strptime(a, '%m/%d/%Y')
-    k = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    x = (t.weekday() + 1) % 7
-    return k[x]
-print(get_day("12/07/2016")) 
-print(get_day("09/04/2016")) 
-print(get_day("12/08/2011")) 
+# from datetime import datetime
+# def get_day(a):
+#     t = datetime.strptime(a, '%m/%d/%Y')
+#     k = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+#     x = (t.weekday() + 1) % 7
+#     return k[x]
+# print(get_day("12/07/2016")) 
+# print(get_day("09/04/2016")) 
+# print(get_day("12/08/2011")) 
+
+
+
+# def main(a, b):
+#     s = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#     if a == 2: 
+#         if b % 4 == 0:
+#             return 29 
+#         else:
+#             return 28  
+#     return s[a - 1]
+# print(main(2, 2018))
+# print(main(4, 654))
+# print(main(2, 200))
+# print(main(8, 2024))
 
 
 
 
-
-  
-
+def main(a,lis = {}):
+    
+    month, day, year = a.split("/")
+    lis = [1,9,2019]
+    
+    return lis
+print(main("01/09/2019"))
